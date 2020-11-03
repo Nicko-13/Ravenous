@@ -1,9 +1,8 @@
-import React from 'react';
-import logo from '../../logo.svg';
-import BusinessList from '../BusinessList/BusinessList'
-import SearchBar from '../SearchBar/SearchBar'
-import './App.css';
-import Yelp from '../../util/Yelp';
+import React from "react";
+import BusinessList from "../BusinessList/BusinessList";
+import SearchBar from "../SearchBar/SearchBar";
+import "./App.css";
+import Yelp from "../../util/Yelp";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,10 +12,11 @@ class App extends React.Component {
   }
   searchYelp(term, location, sortBy) {
     Yelp.search(term, location, sortBy)
-    .then(businesses => {
-      this.setState({'businesses': businesses});
-    })
-    .catch(console.log('No businesses found'));
+      .then((businesses) => {
+        this.setState({ businesses: businesses });
+      })
+      // eslint-disable-next-line no-undef
+      .catch(console.log("No businesses found"));
   }
 
   render() {

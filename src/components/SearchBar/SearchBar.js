@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import './SearchBar.css';
 
@@ -45,6 +46,7 @@ class SearchBar extends React.Component {
     }
 
     handleSearch(event) {
+        // eslint-disable-next-line react/prop-types
         this.props.searchYelp(
             this.state.term, 
             this.state.location,
@@ -83,6 +85,6 @@ class SearchBar extends React.Component {
             </div>
         )
     }
-};
+}
 
 export default SearchBar;

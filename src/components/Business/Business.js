@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Business.css';
 
@@ -24,6 +25,6 @@ class Business extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Business;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import '../Business/Business.css';
 import Business from '../Business/Business';
@@ -13,7 +14,7 @@ class BusinessList extends React.Component {
                 }
             </div>
         )
-    };
-};
+    }
+}
 
 export default BusinessList;
