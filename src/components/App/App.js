@@ -4,6 +4,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import "./App.css";
 import Yelp from "../../util/Yelp";
 
+// test comment
 class App extends React.Component {
   constructor(props) {
     super(props);
