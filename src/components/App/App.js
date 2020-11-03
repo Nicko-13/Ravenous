@@ -5,6 +5,7 @@ import "./App.css";
 import Yelp from "../../util/Yelp";
 
 // test comment
+// another test comment
 class App extends React.Component {
   constructor(props) {
     super(props);
